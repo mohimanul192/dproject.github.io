@@ -29,20 +29,13 @@ body {
   min-height: 100%;
   width: 100%;
   padding-bottom: 10%;
-  margin-left: 30%;
+  margin-left: 3%;
 }
 #logopic:hover {
   opacity: 0.6;
 }
-/* #aboutPic {
-  border: 2px solid #e80d68;
-  border-radius: 100%;
-  margin-left: 20%;
-  margin-top: 50%;
-  width: 80%;
-  min-height: 45%;
-} */
-/*1st image*/
+
+/*Images*/
 
 #img1 {
   width: 100%;
@@ -54,8 +47,7 @@ body {
   border-color: black;
 }
 
-/*Border*/
-
+/*Borders*/
 .divborder1 {
   width: 100%;
   min-height: 3px;
@@ -76,12 +68,57 @@ body {
   margin-top: 12%;
 }
 
+/*Modal*/
+.modal-textp {
+  font-size: 2.1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: red;
+  padding-left: 20%;
+}
+.modal-text {
+  font-size: 1.13rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: black;
+  text-align: center;
+  padding-top: 10%;
+}
+#modal-btn {
+  text-decoration: none;
+  color: white;
+}
+#modal-btn:hover {
+  color: white;
+}
+
+#modal-signin {
+  font-size: 2.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 34%;
+  padding-top: 10%;
+  color: #0b5ed7;
+}
+#login {
+  margin-top: 5%;
+  background-clip: border-box;
+  padding-top: 4%;
+  padding-bottom: 10%;
+  max-width: 25rem;
+  border-radius: 4%;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: black;
+  line-height: 70px;
+}
+
 /* navigation bar*/
 
 nav {
   background-color: white;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
-  height: 124px;
+  max-height: 124px;
   max-width: 100%;
   transform: translateY(-20%);
   animation: nav-load var(--nav-load-time) ease-in;
@@ -160,86 +197,116 @@ li a:hover {
 
 .main-div-sz {
   margin-top: 2%;
-  margin-left: 10%;
-  width: 40%;
-  border: 3px solid transparent;
+  margin-left: 15%;
+  width: 33%;
+  /* border: 3px solid transparent;
   border-image: linear-gradient(to right, red, #bc10bc);
-  border-image-slice: 1;
+  border-image-slice: 1; */
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.8);
   background-color: #d6f2f2;
   background-image: linear-gradient(315deg, #ead5db 0%, #d6f2f2 100%);
   background-clip: border-box;
   padding-bottom: 4%;
+  border-radius: 4%;
 }
 
 .main-div-sz2 {
   margin-top: 2%;
-  margin-left: 4%;
-  width: 40%;
-  border: 3px solid transparent;
-  border-image: linear-gradient(to right, red, #bc10bc);
-  border-image-slice: 1;
-  background-color: black;
-}
-
-#slider {
-  overflow: hidden;
-}
-#slider figure {
+  margin-left: 10%;
+  width: 33%;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.8);
+  background-image: url(covid19.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
-  width: 500%;
+  justify-content: center;
+}
+.main-div-sz2 > * {
+  position: relative;
+  z-index: 2;
+}
+.main-div-sz2::after {
+  content: "";
+  position: absolute;
   left: 0;
-  margin: 0;
-  animation: 20s slider infinite;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
 }
 
-#slider figure img {
-  float: left;
-  width: 20%;
+/*Slider Background*/
+.slide {
+  margin-top: 2%;
 }
 
-@keyframes slider {
-  0% {
-    left: 0;
-  }
-  20% {
-    left: 0;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  70% {
-    left: -200%;
-  }
-
-  75% {
-    left: -300%;
-  }
-  95% {
-    left: -300%;
-  }
-  100% {
-    left: -400%;
-  }
+#prev-btn {
+  background-color: red;
+  max-width: 6vw;
+  margin-right: 80%;
+  height: 7vh;
+}
+#next-btn {
+  background-color: red;
+  margin-top: 1px;
+  max-width: 6vw;
+  margin-left: 80%;
+  height: 7vh;
+}
+.slide-btn:hover {
+  background-color: turquoise;
+}
+.slide1-text {
+  z-index: 2;
+  top: 0;
+  left: 0;
+  transform: translateX(-13%);
+}
+#slide1-h5 {
+  padding-top: 15%;
+  font-size: 2.7rem;
+  color: white;
+  font-weight: 900;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+#slide1-p {
+  padding-top: 2%;
+  font-size: 1.3rem;
+  justify-content: center;
+  padding-left: 30%;
+  padding-right: 30%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.slide-div::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+/*Home page spans*/
 .indexsp1 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
-  font-size: 40px;
-  margin-left: 10%;
+  font-size: 2.2rem;
+  margin-left: 27%;
   color: #9c2346;
 }
 .indexsp2 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-weight: bold;
   color: #bc10bc;
-  font-size: 45px;
+  font-size: 2.2rem;
   padding-top: 60%;
   margin-left: 6px;
   border-bottom: 4px solid red;
@@ -258,46 +325,56 @@ li a:hover {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 30px;
-  color: #9c2346;
+  color: white;
   padding-left: 37%;
   margin-left: 5px;
 }
 .indexsp5 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  color: #9c2346;
+  color: white;
   font-size: 30px;
   margin-left: 5px;
 }
 .indexsp6 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  color: #9c2346;
+  color: white;
   font-size: 30px;
   margin-left: 5px;
   border-bottom: 4px solid red;
 }
+
+/*Home page paragraphs*/
 .index-p {
   font-family: apple-system, blinkmacsystemfont, "segoe ui", roboto,
     "oxygen-sans", ubuntu, cantarell, "helvetica neue", helvetica, arial,
     sans-serif;
-  font-size: 23px;
-  padding-left: 60px;
-  padding-right: 50px;
-  margin-top: 50px;
+  font-size: 1.123rem;
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-top: 9%;
   text-align: justify;
+  word-wrap: break-word;
+  word-spacing: 1.2px;
 }
 
 .index-pxl {
   font-family: apple-system, blinkmacsystemfont, "segoe ui", roboto,
     "oxygen-sans", ubuntu, cantarell, "helvetica neue", helvetica, arial,
     sans-serif;
-  padding-top: 7%;
-  font-size: 23px;
-  padding-left: 20%;
-  padding-right: 15%;
+  padding-top: 10%;
+  font-size: 1.123rem;
+  color: white;
+  padding-left: 8%;
+  padding-right: 8%;
   margin-top: 20px;
   text-align: justify;
+}
+#covid {
+  color: white;
+  padding-top: 6%;
+  text-align: center;
 }
 
 .index-p2 {
@@ -318,48 +395,45 @@ li a:hover {
   font-size: 25px;
   font-weight: 600;
   padding-left: 40%;
-  background-color: #ff3cac;
-  background-image: linear-gradient(
-    225deg,
-    #ff3cac 0%,
-    #784ba0 50%,
-    #2b86c5 100%
-  );
-  background-clip: text;
 }
 .index-p4 {
   font-family: apple-system, blinkmacsystemfont, "segoe ui", roboto,
     "oxygen-sans", ubuntu, cantarell, "helvetica neue", helvetica, arial,
     sans-serif;
   font-weight: 600;
-  color: black;
-  font-size: 16px;
+  color: white;
+  padding-left: 50%;
+  font-size: 1.004rem;
+  line-height: 25px;
 }
+/*Homepage headings*/
 .indexh4 {
   font-family: apple-system, blinkmacsystemfont, "segoe ui", roboto,
     "oxygen-sans", ubuntu, cantarell, "helvetica neue", helvetica, arial,
     sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  color: purple;
+  padding-left: 50%;
+  font-size: 1.6rem;
+  color: white;
 }
 .indexh5 {
   font-family: apple-system, blinkmacsystemfont, "segoe ui", roboto,
     "oxygen-sans", ubuntu, cantarell, "helvetica neue", helvetica, arial,
     sans-serif;
   color: black;
-  text-align: justify;
-  font-size: 17px;
-  padding-left: 30px;
-  padding-right: 30px;
+  font-size: 1rem;
+  padding-left: 3%;
+  padding-right: 3%;
   font-weight: 500;
   padding-top: 10px;
   padding-bottom: 10px;
+  line-height: 25px;
 }
 
+/*Homepage buttons*/
 .index-btn {
   color: white;
-  font-size: 20px;
+  font-size: 1.9rem;
   font-family: apple-system, blinkmacsystemfont, "segoe ui", roboto,
     "oxygen-sans", ubuntu, cantarell, "helvetica neue", helvetica, arial,
     sans-serif;
@@ -372,6 +446,29 @@ li a:hover {
   font-weight: 600;
   font-size: 15px;
   text-decoration: none;
+  margin-left: 50%;
+}
+
+.index-btn2ex {
+  font-family: apple-system, blinkmacsystemfont, "segoe ui", roboto,
+    "oxygen-sans", ubuntu, cantarell, "helvetica neue", helvetica, arial,
+    sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-left: 28%;
+  margin-top: 10%;
+  max-width: 30rem;
+}
+
+.subscribe {
+  font-family: apple-system, blinkmacsystemfont, "segoe ui", roboto,
+    "oxygen-sans", ubuntu, cantarell, "helvetica neue", helvetica, arial,
+    sans-serif;
+  margin-top: 5%;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-decoration: none;
 }
 .index-btn3 {
   font-family: apple-system, blinkmacsystemfont, "segoe ui", roboto,
@@ -383,26 +480,80 @@ li a:hover {
 }
 .index-btn4 {
   color: white;
-  font-size: 20px;
+  font-size: 1rem;
   font-family: apple-system, blinkmacsystemfont, "segoe ui", roboto,
     "oxygen-sans", ubuntu, cantarell, "helvetica neue", helvetica, arial,
     sans-serif;
   text-decoration: none;
-  padding: 50px 60px;
+  max-width: 25rem;
+  text-align: center;
 }
 .index-btn4:hover {
   color: white;
 }
 
+/*Homepage cards*/
 .d1-cls {
   margin-top: 3%;
-  padding-left: 24%;
-  width: 60%;
+  width: 70%;
+  padding-left: 20%;
 }
 .d2-cls {
-  padding-left: 24%;
   outline: hidden;
-  width: 60%;
+  width: 70%;
+  margin-top: 3%;
+  padding-left: 20%;
+}
+
+/*Backgroud for card*/
+.card-bg1 {
+  background-image: url(taka.jpg);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  max-width: 100%;
+  position: relative;
+  justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.8);
+}
+.card-bg1 > * {
+  position: relative;
+  z-index: 2;
+}
+.card-bg1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.card-bg2 {
+  background-image: url(volunteer.jpg);
+  background-repeat: no-repeat;
+  background-position: fixed;
+  max-width: 100%;
+  position: relative;
+  justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.8);
+}
+.card-bg2 > * {
+  position: relative;
+  z-index: 2;
+}
+.card-bg2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
 }
 
 /* Our programs*/
@@ -422,45 +573,36 @@ li a:hover {
   background-color: #ffdee9;
   background-image: linear-gradient(45deg, #ffdee9 0%, #b5fffc 100%);
   margin-bottom: 20px;
-  border: 3px solid transparent;
-  border-image: linear-gradient(to right, #ff3cac, #2b86c5);
-  border-image-slice: 1;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.8);
+  border-radius: 4%;
 }
 .card-div2 {
   background-color: #ffdee9;
   background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
   margin-bottom: 20px;
-  border: 3px solid transparent;
-  border-image: linear-gradient(to right, #2b86c5, #ff3cac);
-  border-image-slice: 1;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.8);
+  border-radius: 4%;
 }
 .card-div3 {
   background-color: #ffdee9;
   background-image: linear-gradient(315deg, #ffdee9 0%, #b5fffc 100%);
   margin-bottom: 20px;
-  border: 3px solid transparent;
-  border-image: linear-gradient(to right, #ff3cac, #2b86c5);
-  border-image-slice: 1;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.8);
+  border-radius: 4%;
 }
 
 .bordercard {
   border: none;
 }
+
+/*Cards images*/
 .program-pic {
   width: 70%;
   height: 250px;
   border-radius: 100%;
-  background-color: #4158d0;
-  background-image: linear-gradient(
-    43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
-  background-clip: border-box;
-
   margin-left: 33px;
   margin-bottom: 20px;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.8);
 }
 .program-pic1 {
   width: 80%;
@@ -469,17 +611,26 @@ li a:hover {
 /*index page footer*/
 .div2 {
   margin-top: 7%;
-  background-color: #74ebd5;
+  background-color: #12473e;
   background-image: linear-gradient(246deg, #74ebd5 0%, #9face6 100%);
   background-clip: border-box;
   max-width: 100%;
   max-height: 500px;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.8);
   background-size: 400%;
   animation: bg-animation 5s infinite alternate;
 }
-
-.div2:hover {
-  opacity: 1;
+.join-mission {
+  margin-top: 5%;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.8);
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #ff3cac 0%,
+    #784ba0 50%,
+    #2b86c5 100%
+  );
+  background-clip: border-box;
 }
 
 /*Donation page*/
@@ -489,24 +640,26 @@ li a:hover {
 }
 
 .donation-form {
-  margin-top: 5%;
+  margin-top: 10%;
   padding-top: 50px;
   padding-bottom: 70px;
   padding-left: 6%;
   padding-right: 5%;
   margin-left: 15%;
-  background-color: #000000;
-  background-image: linear-gradient(0deg, #000000 0%, #3a4a54 100%);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.8);
   width: 70%;
-  border-radius: 3%;
-  height: 700px;
+  height: 800px;
+}
+.input-box {
+  border: 1px solid #0b5ed7;
 }
 
 .label1 {
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  color: honeydew;
+  font-size: 1.1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  color: black;
 }
 
 .donate-btn1 {
@@ -516,9 +669,9 @@ li a:hover {
 }
 #donatep1 {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 800;
-  font-size: 40px;
-  padding-left: 40%;
+  font-weight: 600;
+  font-size: 1.7rem;
+  padding-left: 33%;
   color: brown;
 }
 #donatediv2 {
@@ -527,27 +680,26 @@ li a:hover {
 
 /*Volunteer page*/
 #voldiv1 {
-  margin-top: 1%;
+  margin-top: 10%;
 }
 #volp1 {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 800;
-  font-size: 30px;
-  margin-top: 5%;
-  padding-left: 38%;
+  font-weight: 600;
+  font-size: 1.7rem;
+  margin-top: 2%;
+  padding-left: 34%;
   color: #9c2346;
 }
 #volform {
-  margin-top: 5%;
+  margin-top: 10%;
   padding-top: 50px;
   padding-bottom: 30px;
   padding-left: 6%;
   padding-right: 5%;
   margin-left: 15%;
   width: 70%;
-  height: 500px;
-  background-color: #000000;
-  background-image: linear-gradient(0deg, #000000 0%, #3a4a54 100%);
+  height: 700px;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.8);
 }
 
 h1 {
@@ -562,41 +714,36 @@ h1 {
   color: aliceblue;
 }
 
-.required:after {
+.important:after {
   content: " *";
   color: red;
 }
 
-/*Log in form*/
-.bgpic {
-  background-image: url(bg.jpg);
-  background-position: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
+/*Blood Donation*/
+
+#blooddiv1 {
+  margin-top: 15%;
 }
-#login {
-  margin-top: 13%;
-  background-clip: border-box;
-  padding-top: 4%;
-  background-color: #74ebd5;
-  background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
-  padding-bottom: 10%;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-left: 30%;
-  height: 440px;
-  width: 540px;
-  border-radius: 4%;
-  font-size: 20px;
+#bloodp1 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  color: white;
-  line-height: 70px;
-  animation: div-load 600ms ease-in 200ms;
-  animation-fill-mode: forwards;
-  transform: translateX(-1000%);
+  font-size: 1.7rem;
+  padding-left: 30%;
+  color: #9c2346;
+}
+#blood-donate-form {
+  margin-top: 10%;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-left: 6%;
+  padding-right: 5%;
+  margin-left: 15%;
+  width: 70%;
+  height: 800px;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.8);
 }
 
+/*Sign in page*/
 .gap1 {
   margin-top: 8%;
 }
@@ -610,8 +757,8 @@ h1 {
 #signin {
   font-size: 30px;
   font-family: "Secular One", sans-serif;
-  margin-left: 16%;
-  color: white;
+  margin-left: 27%;
+  color: skyblue;
 }
 
 /*Responsive*/
@@ -1000,8 +1147,8 @@ h1 {
       "oxygen-sans", ubuntu, cantarell, "helvetica neue", helvetica, arial,
       sans-serif;
     font-weight: 600;
-    color: black;
-    font-size: 14px;
+    color: white;
+    font-size: 0.8rem;
   }
 
   .indexsp2 {
@@ -1043,7 +1190,7 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     font-size: 17px;
-    padding-left: 0;
+    padding-left: 50%;
   }
 
   .index-btn2 {
@@ -1067,13 +1214,62 @@ h1 {
 
   .d1-cls {
     margin-top: 3%;
-    padding-left: 24%;
     width: 100%;
+    padding-left: 5%;
   }
   .d2-cls {
-    padding-left: 24%;
     outline: hidden;
     width: 100%;
+    margin-top: 3%;
+    padding-left: 5%;
+  }
+
+  .card-bg1 {
+    background-image: url(taka.jpg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    max-width: 100%;
+    position: relative;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .card-bg1 > * {
+    position: relative;
+    z-index: 2;
+  }
+  .card-bg1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .card-bg2 {
+    background-image: url(volunteer.jpg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    max-width: 100%;
+    position: relative;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  .card-bg2 > * {
+    position: relative;
+    z-index: 2;
+  }
+  .card-bg2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
   }
 
   .card-div1 {
@@ -1164,31 +1360,36 @@ h1 {
     background-color: #4c4c4c;
   }
 
+  /*Blood Donation*/
+  #blood-donate-form {
+    margin-top: 5%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 6%;
+    padding-right: 5%;
+    margin-left: 15%;
+    width: 70%;
+    height: 100%;
+    background-color: #000000;
+    background-image: linear-gradient(0deg, #000000 0%, #3a4a54 100%);
+  }
+
   /*Sign in form*/
-  .bgpic {
-    background-image: url(bg.jpg);
-    background-position: fixed;
-    background-repeat: no-repeat;
-    background-size: 840px;
+  #login {
+    margin-top: 5%;
+    background-clip: border-box;
+    padding-top: 4%;
+    padding-bottom: 10%;
+    max-width: 30rem;
+    border-radius: 4%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: black;
+    line-height: 70px;
   }
   img:hover {
     opacity: 0.5;
-  }
-  #login {
-    background-clip: border-box;
-    background-color: #74ebd5;
-    background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
-    height: 20%;
-    width: 60%;
-    border-radius: 4%;
-    margin-top: 50%;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    color: white;
-    animation: div-load 600ms ease-in 200ms;
-    animation-fill-mode: forwards;
-    transform: translateX(-1000%);
   }
 
   .in_txt1 {
@@ -1199,23 +1400,7 @@ h1 {
   #createac {
     margin-left: 40px;
   }
-  #signin {
-    font-size: 23px;
-    font-family: "Secular One", sans-serif;
-    color: white;
-    font-weight: 800;
-    margin-bottom: 5%;
-    margin-top: 10%;
-  }
 }
-
-/* @media (orientation: landscape) {
-  nav {
-    background: white;
-    height: 200px;
-    max-width: 100%;
-  }
-} */
 
 /*Animation for navbar*/
 

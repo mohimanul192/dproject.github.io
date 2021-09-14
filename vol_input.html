@@ -39,57 +39,80 @@
         </section>
 
 
-    <header class="">
-        <nav class="navbar">
-          <input type="checkbox" id="check">
-          <label for="check" class="checkbtn">
-            <i class="fas fa-bars"></i>
-          </label>
-          
-          <section>
-            <div id="divp"> <a href="index.html"><img id="logopic" src="logo4.png" alt=""></a>
+        <header class="">
+      
+          <nav class="navbar fixed-top">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+  
+            <section>
+              <div id="divp"> <a href="index.html"><img id="logopic" src="logo4.png" alt=""></a>
+            </div></section>
             
-          </div></section>
-          <label class="logo_"> <a style="color: black;
-            text-decoration: none;"  href="index.html"></a> </label> 
-            <ul>
-                <li><a class="text-decoration-none" href="index.html">Home</a></li>
-                <li><a class="text-decoration-none" href="#">Programs</a></li>
-                <li><a class="text-decoration-none" href="#">Contact Us</a></li>
-                <li><a class="text-decoration-none" href="donate.html">Donate now</a></li>
-                <li><a class="text-decoration-none" href="login.html">Sign in</a></li>
-    
-            </ul>
-        </nav>
-    </header>
-   
-    <section>
-        <div id="voldiv1" >
-            <p id="volp1">REGISTRATION FORM</p>
-        </div>
-    </section>
+              <label class="logo_ "> <a style="color: black;
+                text-decoration: none;"  href="index.html"> </label>
+              <ul>
+                  <li><a class="text-decoration-none " href="index.html">Home</a></li>
+                  <li><a class="text-decoration-none" href="donate.html">Donate now</a></li>
+                  <div class="dropdown drop-nav">
+                    <button class="btn btn-secondary dropdown-toggle drop-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                     Programs
+                    </button>
+                    <ul class="dropdown-menu dropdown-h" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item dropdown-f" href="onetime_sup.html">Support Program</a></li>
+                      <li><a class="dropdown-item dropdown-f" href="#">Relief Program</a></li>
+                      <li><a class="dropdown-item dropdown-f" href="blood_donate.html">Blood Donation</a></li>
+                    </ul>
+                  </div>
+                  <div class="dropdown drop-nav">
+                    <button class="btn btn-secondary dropdown-toggle drop-btn active-page" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contact us
+                    </button>
+                    <ul class="dropdown-menu dropdown-h" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item dropdown-f" href="#">Genaral Inquiry</a></li>
+                      <li><a class="dropdown-item dropdown-f" href="blood_donate.html">For Blood</a></li>
+                    </ul>
+                  </div>
+                
+                  <!-- <li><a class="text-decoration-none" href="login.html">Sign in</a></li> -->
+                  <div class="dropdown drop-nav">
+                    <button class="btn btn-secondary dropdown-toggle drop-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                     Account
+                    </button>
+                    <ul class="dropdown-menu dropdown-h" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item dropdown-f" data-bs-toggle="modal" data-bs-target="#exampleModal2" href="#">Sign In</a></li>
+                      <li><a class="dropdown-item dropdown-f" href="#">Sign Up</a></li>
+                    </ul>
+                  </div>
+      
+              </ul>
+          </nav>
+      </header>
 
     <section>
         <form id="volform" method="POST" action="vol.php" class="row g-3">
+          <p id="volp1">Registration Form</p>
             <div class="col-md-6">
-              <label  for="input-f-name" class="form-label required label1">First Name</label>
-              <input type="text" name="fname" class="form-control" placeholder="Enter your first name" aria-label="EnterFirst name">
+              <label  for="input-f-name" class="form-label important label1">First Name</label>
+              <input type="text" name="fname" class="form-control input-box" placeholder="Enter your first name" aria-label="EnterFirst name" required>
             </div>
             <div class="col-md-6">
-              <label for="input-l-name" class="form-label required label1">Last Name</label>
-              <input type="text" name="lname" class="form-control" placeholder="Enter your Last name" aria-label="Last name">
+              <label for="input-l-name" class="form-label important label1">Last Name</label>
+              <input type="text" name="lname" class="form-control input-box" placeholder="Enter your Last name" aria-label="Last name" required>
             </div>
             <div class="col-md-6">
-                <label for="inputEmail4" class="form-label required label1">Email</label>
-                <input type="email" name="mail" class="form-control" placeholder="Enter your Email" aria-label="EnterFirst name">
+                <label for="inputEmail4" class="form-label important label1">Email</label>
+                <input type="email" name="mail" class="form-control input-box" placeholder="Enter your Email" aria-label="EnterFirst name" required>
               </div>
               <div class="col-md-6">
-                <label  for="input-cnt-no" class="form-label required label1">Contact No</label>
-                <input type="text" name="c_no" class="form-control" placeholder="Enter contact no" aria-label="Last name">
+                <label  for="input-cnt-no" class="form-label important label1">Contact No</label>
+                <input type="text" name="c_no" class="form-control input-box" placeholder="Enter contact no" aria-label="Last name" required>
               </div>
               <div class="col-md-6">
-                <label for="input-gender" class="form-label required label1">Gender</label>
-                <select id="inputState" name="gender" class="form-select">
+                <label for="input-gender" class="form-label important label1">Gender</label>
+                <select id="inputState" name="gender" class="form-select input-box" required>
                     <option selected>Choose...</option>
                     <option>Male</option>
                     <option>Female</option>
@@ -97,8 +120,8 @@
                   </select>
               </div>
               <div class="col-md-6">
-                <label for="input-branch" class="form-label  required label1">Branch</label>
-                <select id="inputState" name="branch" class="form-select">
+                <label for="input-branch" class="form-label  important label1">Branch</label>
+                <select id="inputState" name="branch" class="form-select input-box" required>
                     <option selected>Choose...</option>
                     <option>Dhaka</option>
                     <option>Chottogram</option>
@@ -108,21 +131,53 @@
                   </select>
               </div>
               <div class="col-md-6">
-                <label  for="input-cnt-no" class="form-label required label1">Blood Group</label>
-                <input type="text" name="blood_g" class="form-control" placeholder="Enter contact no" aria-label="Last name">
+                <label  for="input-cnt-no" class="form-label important label1">Blood Group</label>
+                <input type="text" name="blood_g" class="form-control input-box" placeholder="Enter contact no" aria-label="Last name" required>
               </div>
               
               <div class="col-md-6">
-                <label  for="input-cnt-no" class="form-label required label1">Date Of Birth</label>
-                <input type="date" name="join" class="form-control" aria-label="Last name">
+                <label  for="input-cnt-no" class="form-label important label1">Date Of Birth</label>
+                <input type="date" name="join" class="form-control input-box" aria-label="Last name" required>
               </div>
        
             <div class="col-12">
               <button name="submit" value="redirect"  type="submit" class="btn btn-primary donate-btn1">SEND</button>
             </div>
-           
+
+            <div style="color:purple;" class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+              © 2021 Copyright:
+              <a style="border-bottom: 4px solid red;" class="text-reset fw-bold text-decoration-none" href="##">MSN Limited</a>
+            </div>
+          </form> 
     </section>
-  </form>
+
+
+    <section>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <H4 id="modal-signin">SIGN IN</H4>
+              <form action="" id="login">
+                <div class="form-group">
+                  <input type="email"  class="form-control in_txt1 gap1" placeholder=" Enter Your Email" id="email "> 
+                </div>
+                <div class="form-group">      
+                  <input type="password" class="form-control in_txt1 gap1" placeholder="Enter Your Password" id="pwd">
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+          </section>
+  
   
 
         

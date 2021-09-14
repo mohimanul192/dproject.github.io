@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExigencY</title>
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+
+    <header class="">
+      
+        <nav class="navbar fixed-top">
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+
+          <section>
+            <div id="divp"> <a href="index.html"><img id="logopic" src="logo4.png" alt=""></a>
+          </div></section>
+          
+            <label class="logo_ "> <a style="color: black;
+              text-decoration: none;"  href="index.html"> </label>
+            <ul>
+                <li><a class="text-decoration-none active-page" href="index.html">Home</a></li>
+                <li><a class="text-decoration-none" href="donate.html">Donate now</a></li>
+                <div class="dropdown drop-nav">
+                  <button class="btn btn-secondary dropdown-toggle drop-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                   Programs
+                  </button>
+                  <ul class="dropdown-menu dropdown-h" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item dropdown-f" href="onetime_sup.html">Support Program</a></li>
+                    <li><a class="dropdown-item dropdown-f" href="onetime_sup.html">Relief Program</a></li>
+                    <li><a class="dropdown-item dropdown-f" href="blood_donate.html">Blood Donation</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown drop-nav">
+                  <button class="btn btn-secondary dropdown-toggle drop-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact us
+                  </button>
+                  <ul class="dropdown-menu dropdown-h" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item dropdown-f" href="#">Genaral Inquiry</a></li>
+                    <li><a class="dropdown-item dropdown-f" href="vol_input.html">For Volunteering</a></li>
+                    <li><a class="dropdown-item dropdown-f" href="blood_donate.html">For Blood</a></li>
+                  </ul>
+                </div>
+              
+                <!-- <li><a class="text-decoration-none" href="login.html">Sign in</a></li> -->
+                <div class="dropdown drop-nav">
+                  <button class="btn btn-secondary dropdown-toggle drop-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                   Account
+                  </button>
+                  <ul class="dropdown-menu dropdown-h" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item dropdown-f" data-bs-toggle="modal" data-bs-target="#exampleModal2">Sign In</a></li>
+                    <li><a class="dropdown-item dropdown-f" data-bs-toggle="modal" data-bs-target="#exampleModal3" href="#">Sign Up</a></li>
+                  </ul>
+                </div>
+    
+            </ul>
+        </nav>
+    </header>
+
+      <!-- <div id="slider" >
+         <figure>
+           <img  src="volunteer.jpg" alt="">
+           <img src="nature.jpg" alt="">
+           <img src="bg.jpg" alt="">
+           <img src="blood_donate.jpg" alt="">
+           <img src="volunteer.jpg" alt="">
+         </figure> 
+       </div>  -->
+
+       <section>
+        <div id="carouselExampleIndicators" class="carousel slide slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active slide-div">
+              <img class="d-block w-100" src="bg.jpg" alt="First slide">
+              <div class="carousel-caption d-none d-md-block slide1-text">
+                <h5 id="slide1-h5">Donate And Become 
+                  <br> A Superhero</h5>
+                <p id="slide1-p">Any amount helps and the contribution you make today will build a better future for many, tomorrow.
+                  <br> Help us to support the most vulnerable.</p>
+                  <button type="button" class="btn btn-danger slide-btn"> <a class="index-btn4" data-bs-toggle="modal" data-bs-target="#exampleModal" href="onetime_sup.html">Donate Now</a></button>
+              </div>
+            </div>
+            <div class="carousel-item slide-div">
+              <img class="d-block w-100 img-fluid" src="nature.jpg" alt="Second slide">
+              <div class="carousel-caption d-none d-md-block slide1-text">
+                <h5 id="slide1-h5">Let's Spread Help</h5>
+                <p id="slide1-p">We are running another Emergency COVID-19 campaign for the most vulnerable people in Bangladesh who are disabled, jobless, hungry, elderly, and orphans. Food has been distributed to more than 600000 families during this COVID-19 outbreak. Your contribution will make an impact, whether you donate a lot or a little. Anything helps.</p>
+                <button type="button" class="btn btn-danger slide-btn"> <a class="index-btn4" data-bs-toggle="modal" data-bs-target="#exampleModal" href="onetime_sup.html">Donate Now</a></button>
+
+              </div>
+            </div>
+            <div class="carousel-item slide-div">
+              <img class="d-block w-100" src="volunteer.jpg" alt="Third slide">
+              <div class="carousel-caption d-none d-md-block slide1-text">
+                <h5 id="slide1-h5">Join With Us 
+                  <br> Be A Part Of Our Team
+                </h5>
+                <p id="slide1-p">Join with us to inspire a nation with your supportive works by volunteering opportunity. We are looking for volunteers to work with us in office and field work. Get in touch today to find out new experience.</p>
+                <button type="button" class="btn btn-danger slide-btn"> <a class="index-btn4" href="vol_input.html">Join Now</a></button>
+              </div>
+            </div>
+            <div class="carousel-item slide-div">
+              <img class="d-block w-100" src="blood_donate.jpg" alt="Fourth slide">
+              
+              <div class="carousel-caption d-none d-md-block slide1-text">
+                <h5 id="slide1-h5">Donate And Save
+                  <br>A Life</h5>
+                <p id="slide1-p">Donating blood is one of the greatest ways to help humankind. By doing so, we save someone’s precious life, and that is a blessing in itself.</p>
+                <button type="button" class="btn btn-danger slide-btn"> <a class="index-btn4" data-bs-toggle="modal" data-bs-target="#exampleModal" href="blood_donate.html">Donate Now</a></button>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span id="prev-btn"class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span id="next-btn"class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+       </section>
+
+    <main style="margin-top: 80px;">
+        <section class="container-fluid row sec-bg">
+            <div class="col-lg-8 col-12 ps-5 main-div-sz">
+
+                <span class="indexsp1">About</span>
+                <span class="indexsp2">Us</span>
+
+                <p class="index-p">
+                  A passionate group of people who wishes to inspire a nation and beyond.ExigencY is an educational voluntary organization that originated from Bangladesh.ExigencY has been operated by 3 professionals and with help of thousands of volunteers.Our mission is to globally foster philanthropic works.we are willing to put a smile on people faces.Our motto is to teach with compassion where a good human being is developed rather than a typical human who is only professionally equipped.We want to stand by the people in times of need. Basically we service humanitarian work for human bond. Happiness is not something ready made. It comes from our own actions. So, all our action for make people happy and that make us happy. Happiness is not something ready made. It comes from our own actions. So, all our action for make people happy and that make us happy. Happiness is not something ready made. It comes from our own actions. So, all our action for make people happy and that make us happy. Happiness is not something ready made. It comes from our own actions. So, all our action for make people happy and that make us happy.
+                  
+              </p>
+            </div>
+            <div class="col-lg-4 col-12 pt-5 main-div-sz2 ">
+              <h1 id="covid">Fight Against Covid</h1>
+              <p class="index-pxl">
+                ExigencY has begun its Emergency COVID-19 campaign to fight against Coronavirus to the most vulnerable people in Bangladesh: the poor, disabled, jobless, hungry, elderly, and orphans.We are all completely acknowledged about the poor socio-economic condition of Bangladesh.COVID-19 has made the situation even worse by putting an already poverty stricken population on lockdown where accessibility to nutritional food, drinking water,medicines and other daily commodities are scarcer day by day.This project is addressing to cope up with the emergency need with distribution of survival kits to thousands of people who need it most. This is the time for our unity.Be kind, Be careful and help others...
+
+              </p>
+              <a data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-danger index-btn2ex">Donate Now</a>
+            </div>
+        </section>
+        <section class="container margin">        
+          <span class="indexsp3">Our</span>
+          <span class="indexsp2">Programs</span>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mt-5">
+                <div class="col">
+                  <div class="card h-100 div1 bordercard">
+                    <img src="orphan02.jpg" class="img-thumbnail card-img-top program-pic" alt="...">
+                    <div class="card-body card-div1">
+                      <h5 class="card-title card-h5">Support Program</h5>
+                      <p class="card-text indexh5">ExigencY came into existence since 2021. It is a shelter home for the underprivileged,orphan & semi-orphan girls, between the age group of 6-18 years. A home that started with 3 beneficiaries.You can help them by donating money and we will try to make their life easier. </p>
+                      <br>
+                      <button type="button" class="btn btn-danger"> <a  class="text-decoration-none index-btn4 "data-bs-toggle="modal" data-bs-target="#exampleModal" href="#" >Save A Homeless</a></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100 bordercard div1">
+                    <img src="orphan01.jpg" class="img-thumbnail card-img-top program-pic" alt="...">
+                    <div class="card-body card-div2">
+                      <h5 class="card-title card-h5 ">Relief Program</h5>
+                      <p  class="card-title indexh5">Natural disasters and humanitarian crises are a recurring issue in many developing countries.Bangladesh has been plagued with major hurricanes, tornadoes, and floods in recent years.
+                      <br>  
+                      <br>
+                      Small contribution from you can make a big difference.
+
+                       </p>
+                       <br>
+                        <button type="button" class="btn btn-danger"> <a   class="text-decoration-none index-btn4" data-bs-toggle="modal" data-bs-target="#exampleModal" href="onetime_sup.html">Share Your Love</a></button>
+                    </div>
+                  </div>
+                </div>
+               
+                <div class="col">
+                  <div style="padding-left: 50px;" class="card h-100 bordercard">
+                    <img src="blood.jpg" class="img-thumbnail card-img-top program-pic" alt="...">
+                    <div class="card-body card-div3">
+                      <h5 class="card-title card-h5">Blood Donation Program</h5>
+                      <p class="card-text indexh5">Your little effort can give others second chance to live life.Donating blood is one of the greatest ways to help humankind. By doing so, we save someone’s precious life, and that is a blessing in itself.
+                      <br>  
+                      <br>
+                      Blood Donation will cost you nothing, but it will save a life.
+                      </p>
+                      <br>
+                      <button type="button" class="btn btn-danger"> <a class="index-btn4" href="blood_donate.html">Save A Life</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
+        
+    </main>
+    <footer>
+      <div class="container-fluid w-100 h-50 div2">
+          <p class="index-p2">Our Beneficiaries says,"We were nothing without you".
+            You haven't saved our lives only but fulfilled the dreams.We are lucky to have you in our lives.</p>
+      </div>
+    <div  class="container-fluid join-mission">
+         <span class="indexsp4">How</span>
+         <span class="indexsp5">Can</span>
+         <span class="indexsp5"">You</span>
+         <span class="indexsp6" > Help</span>
+         <span class="indexsp5" >Us</span>
+  </div>
+  <div class="d1-cls">
+    <div class="card-body card-bg1">
+      <h4  class="card-title indexh4">DONATION</h4>
+      <p class="card-text index-p4">With supporting text below as a natural lead-in to additional content.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet dolorum atque maiores consequuntur impedit nam debitis obcaecati iure similique, cupiditate minus eos at! Beatae, debitis maiores voluptatem omnis nihil commodi.
+      </p>
+      <a href="donate.html" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-danger index-btn2">DONATE</a>
+    </div>
+  </div>
+
+  
+  <div class="d2-cls">
+    <div class="card-body card-bg2">
+      <h4 class="card-title indexh4">VOLUNTEER</h4>
+      <p class="card-text index-p4">With supporting text below as a natural lead-in to additional content.Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aspernatur exercitationem fugiat esse et, nam temporibus dolore eum deleniti inventore minima aliquam, a laborum cumque, laboriosam autem adipisci natus quasi.
+      </p>
+      <a href="vol_input.html" class="btn btn-danger index-btn2">JOIN US</a>
+    </div>
+  </div>
+
+
+    <section>
+      <form method="POST" action="subscriber.php" style="padding-left: 25%;
+                   padding-right: 25%;" class="form-inline">
+        <div class="form-group">
+          <label for="staticEmail2" class="sr-only">Email</label>
+          <input  type="text" readonly class="form-control-plaintext subscribe" id="staticEmail2" value="Subscribe Us for Daily Updates">
+        </div>
+        <div class="form-group  mb-2">
+          <label for="inputPassword2" class="sr-only index-btn2">Email</label>
+           <input type="email" name="email"  class="form-control input-box" id="colFormLabel"  placeholder="Enter Your Email"> 
+           
+        </div>
+        <button type= "submit" name="submit" class="btn btn-danger mb-2 index-btn3">Subscribe</button>
+      </form>
+    </section>
+    
+    </footer>
+
+    <footer style="margin-top:10%;" class="text-center text-lg-start bg-dark text-muted">
+    
+      <section 
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        
+        <div  class="me-5 d-none d-lg-block">
+          <span style="color:cornsilk;">Get connected with us on social networks</span>
+        </div>
+        
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i  class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        
+      </section>
+    
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+         
+          <div class="row mt-3">
+         
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              
+              <h6 style="color:cornsilk;" class="fw-bold mb-4">
+                  <i class="fas fa-hand-holding-heart"></i>ExigencY
+              </h6>
+              <p style="color:cornsilk;">
+                Here you can use rows and columns to organize your footer content. Lorem ipsum
+                dolor sit amet, consectetur adipisicing elit.
+              </p>
+            </div>
+           
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              
+              <h6 style="color:cornsilk;" class="text-uppercase fw-bold mb-4">
+                VISIT
+              </h6>
+              <p style="color:cornsilk;">
+                <a  href="#!" class="text-reset text-decoration-none">About</a>
+              </p>
+              <p style="color:cornsilk;">
+                <a  href="#!" class="text-reset text-decoration-none">Programs</a>
+              </p>
+              <p style="color:cornsilk;">
+                <a  href="#!" class="text-reset text-decoration-none">Financials</a>
+              </p>
+            </div>
+           
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+             
+              <h6 style="color:cornsilk;" class="text-uppercase fw-bold mb-4">
+                HELP
+              </h6>
+              <p style="color:cornsilk;">
+                <a  href="#!" class="text-reset text-decoration-none">Contact</a>
+              </p>
+              <p style="color:cornsilk;">
+                <a  href="donate.html" class="text-reset text-decoration-none">Donation</a>
+              </p>
+              <p style="color:cornsilk;">
+                <a  href="vol_input.html" class="text-reset text-decoration-none">Volunteer</a>
+              </p>
+            </div>
+           
+    
+            
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              
+              <h6 style="color:cornsilk;" class="text-uppercase fw-bold mb-4">
+               CONTACT
+              </h6>
+              <p style="color:cornsilk;"><i class="fas fa-home me-3"></i> House:13,Road:2/A,Sayeed Nagar,Vatara,Dhaka-1216</p>
+              <p style="color:cornsilk;">
+                <i class="fas fa-envelope me-3"></i>
+                info@example.com
+              </p>
+              <p style="color:cornsilk;"><i class="fas fa-phone me-3"></i> +8801423997916</p>
+              <p style="color:cornsilk;"><i class="fas fa-print me-3"></i> +8801413435678</p>
+            </div>
+            
+          </div>
+          
+        </div>
+      </section>
+     
+    
+      <!-- Copyright -->
+      <div style="color:cornsilk;" class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+        <a style="border-bottom: 4px solid red;" class="text-reset fw-bold text-decoration-none" href="##">MSN Limited</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+   
+
+    <section>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-textp">Donate With Love</p>
+        <p class="modal-text">We provide you with the widest choices of causes to donate.
+          Donate to your favourite cause.</p>
+        
+      </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger"> <a id="modal-btn" href="onetime_sup.html">Donate</a><button>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+
+    <section>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <H4 id="modal-signin">SIGN IN</H4>
+
+
+              <form action="login.php" method="POST" id="login">
+                <div class="form-group">
+                  <input type="email" name="email"  class="form-control in_txt1 gap1 input-box" placeholder=" Enter Your Email" id="email" required> 
+                </div>
+                <div class="form-group">      
+                  <input type="password" name="pass" class="form-control in_txt1 gap1 input-box" placeholder="Enter Your Password" id="pwd" required>
+                </div>
+                <button type="submit" name="submit" class="btn btn-primary">Sign in</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+          </section>
+
+
+          <section>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <H4 id="modal-signin">SIGN UP</H4>
+                    <form action="signup.php" method="POST" id="login">
+                      <div class="form-group">
+                        <input type="email" name="email"  class="form-control in_txt1 input-box gap1" placeholder=" Enter Your Email" id="email "> 
+                      </div>
+                      <div class="form-group">      
+                        <input type="password" name="pass" class="form-control input-box in_txt1 gap1" placeholder="Enter Your Password" id="pwd">
+                      </div>
+                      <div class="form-group">      
+                        <input type="password" name="pass_confirm" class="form-control input-box in_txt1 gap1" placeholder="Confirm Your Password" id="pwd">
+                      </div>
+                      <button type="submit" name="submit" class="btn btn-primary">Sign Up</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+                </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

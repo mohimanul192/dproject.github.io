@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExigencY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+</head>
+<body>
+    <header class="">
+      
+        <nav class="navbar fixed-top">
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+          </label>
+
+          <section>
+            <div id="divp"> <a href="index.html"><img id="logopic" src="logo4.png" alt=""></a>
+          </div></section>
+          
+            <label class="logo_ "> <a style="color: black;
+              text-decoration: none;"  href="index.html"> </label>
+            <ul>
+                <li><a class="text-decoration-none" href="index.html">Home</a></li>
+                <li><a class="text-decoration-none" href="donate.html">Donate now</a></li>
+                <div class="dropdown drop-nav">
+                  <button class="btn btn-secondary dropdown-toggle drop-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                   Programs
+                  </button>
+                  <ul class="dropdown-menu dropdown-h" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item dropdown-f" href="onetime_sup.html">Support Program</a></li>
+                    <li><a class="dropdown-item dropdown-f" href="onetime_sup.html">Relief Program</a></li>
+                    <li><a class="dropdown-item dropdown-f" href="blood_donate.html">Blood Donation</a></li>
+                  </ul>
+                </div>
+                <div class="dropdown drop-nav">
+                  <button class="btn btn-secondary dropdown-toggle drop-btn active-page" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact us
+                  </button>
+                  <ul class="dropdown-menu dropdown-h" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item dropdown-f" href="#">Genaral Inquiry</a></li>
+                    <li><a class="dropdown-item dropdown-f" href="vol_input.html">For Volunteering</a></li>
+                  </ul>
+                </div>
+              
+                <!-- <li><a class="text-decoration-none" href="login.html">Sign in</a></li> -->
+                <div class="dropdown drop-nav">
+                  <button class="btn btn-secondary dropdown-toggle drop-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                   Account
+                  </button>
+                  <ul class="dropdown-menu dropdown-h" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item dropdown-f"  data-bs-toggle="modal" data-bs-target="#exampleModal2" href="#">Sign In</a></li>
+                    <li><a class="dropdown-item dropdown-f" href="#">Sign Up</a></li>
+                  </ul>
+                </div>
+    
+            </ul>
+        </nav>
+    </header> 
+
+    <section>
+        <form id="blood-donate-form" method="POST" action="blood_donate.php" class="row g-3">
+          <p id="bloodp1">Blood Donation Form</p>
+            <div class="col-md-6">
+              <label  for="input-f-name" class="form-label important label1">First Name</label>
+              <input type="text" name="first_name" class="form-control input-box" placeholder="Enter your first name" aria-label="EnterFirst name" required>
+            </div>
+            <div class="col-md-6">
+              <label for="input-l-name" class="form-label important label1">Last Name</label>
+              <input type="text" name="last_name" class="form-control input-box" placeholder="Enter your Last name" aria-label="Last name" required>
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label important label1">Email</label>
+                <input type="email" name="email" class="form-control input-box" placeholder="Enter your Email" aria-label="EnterFirst name" required>
+              </div>
+              <div class="col-md-6">
+                <label  for="input-cnt-no" class="form-label important label1">Contact No</label>
+                <input type="text" name="contact_no" class="form-control input-box" placeholder="Enter contact no" aria-label="Last name" required>
+              </div>
+
+              <div class="col-md-6">
+                <label  for="input-cnt-no" class="form-label important label1">Blood Group</label>
+                <select name="blood_group" id="inputState" class="form-select input-box" required>
+                  <option selected>Choose...</option>
+                  <option>A+</option>
+                  <option>A-</option>
+                  <option>AB+</option>
+                  <option>AB-</option>
+                  <option>O+</option>
+                  <option>O-</option>
+                </select>
+              </div>
+              
+              <div class="col-md-6">
+                <label  for="input-cnt-no" class="form-label important label1">Date Of Birth</label>
+                <input type="date" name="date_ofbirth" class="form-control input-box" aria-label="Last name"required>
+              </div>
+
+              <div class="col-md-6">
+                <label  for="input-cnt-no" class="form-label important label1">Street Address</label>
+                <input type="text" name="street" class="form-control input-box" aria-label="Last name" required>
+              </div>
+              <div class="col-md-6">
+                <label  for="input-cnt-no" class="form-label important label1">Police Station</label>
+                <input type="text" name="p_station" class="form-control input-box" aria-label="Last name" required>
+              </div>
+                <div class="col-md-12">
+                  <label for="inputCity"class="important label1" >City</label>
+                  <input type="text" name="city" class="form-control input-box" id="inputCity" required>
+                </div>
+                <div class="form-group col-md-10">
+                  <label for="inputState" class="important label1">District</label>
+                  <input type="text" name="district" class="form-control input-box" id="inputCity" required>
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="inputZip" class="important label1">Postal Code</label>
+                  <input type="text" name="p_code" class="form-control input-box" id="inputZip" required>
+                </div>
+
+              <!-- <div class="col-md-6">
+                <label for="exampleFormControlFile1">Picture</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div> -->
+       
+            <div class="col-12">
+              <button name="submit" value="redirect"  type="submit" class="btn btn-primary donate-btn1">SEND</button>
+            </div>
+
+            <div style="color:purple;" class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+              © 2021 Copyright:
+              <a style="border-bottom: 4px solid red;" class="text-reset fw-bold text-decoration-none" href="##">MSN Limited</a>
+            </div>
+          </form> 
+    </section>
+
+
+
+
+
+    <section>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <H4 id="modal-signin">SIGN IN</H4>
+              <form action="" id="login">
+                <div class="form-group">
+                  <input type="email"  class="form-control in_txt1 gap1" placeholder=" Enter Your Email" id="email "> 
+                </div>
+                <div class="form-group">      
+                  <input type="password" class="form-control in_txt1 gap1" placeholder="Enter Your Password" id="pwd">
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+          </section>
+
+
+
+
+
+
+
+    <footer style="margin-top:10%;" class="text-center text-lg-start bg-dark text-muted">
+    
+        <section 
+          class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+        >
+          
+          <div  class="me-5 d-none d-lg-block">
+            <span style="color:cornsilk;">Get connected with us on social networks</span>
+          </div>
+          
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i  class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+          
+        </section>
+      
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+           
+            <div class="row mt-3">
+           
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                
+                <h6 style="color:cornsilk;" class="text-uppercase fw-bold mb-4">
+                    <i class="fas fa-hand-holding-heart"></i>DBMS_Project
+                </h6>
+                <p style="color:cornsilk;">
+                  Here you can use rows and columns to organize your footer content. Lorem ipsum
+                  dolor sit amet, consectetur adipisicing elit.
+                </p>
+              </div>
+             
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                
+                <h6 style="color:cornsilk;" class="text-uppercase fw-bold mb-4">
+                  VISIT
+                </h6>
+                <p style="color:cornsilk;">
+                  <a  href="#!" class="text-reset text-decoration-none">About</a>
+                </p>
+                <p style="color:cornsilk;">
+                  <a  href="#!" class="text-reset text-decoration-none">Programs</a>
+                </p>
+                <p style="color:cornsilk;">
+                  <a  href="#!" class="text-reset text-decoration-none">Financials</a>
+                </p>
+              </div>
+             
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+               
+                <h6 style="color:cornsilk;" class="text-uppercase fw-bold mb-4">
+                  HELP
+                </h6>
+                <p style="color:cornsilk;">
+                  <a  href="#!" class="text-reset text-decoration-none">Contact</a>
+                </p>
+                <p style="color:cornsilk;">
+                  <a  href="donate.html" class="text-reset text-decoration-none">Donation</a>
+                </p>
+                <p style="color:cornsilk;">
+                  <a  href="vol_input.html" class="text-reset text-decoration-none">Volunteer</a>
+                </p>
+              </div>
+             
+  
+              
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                
+                <h6 style="color:cornsilk;" class="text-uppercase fw-bold mb-4">
+                 CONTACT
+                </h6>
+                <p style="color:cornsilk;"><i class="fas fa-home me-3"></i> House:13,Road:2/A,Sayeed Nagar,Vatara,Dhaka-1216</p>
+                <p style="color:cornsilk;">
+                  <i class="fas fa-envelope me-3"></i>
+                  info@example.com
+                </p>
+                <p style="color:cornsilk;"><i class="fas fa-phone me-3"></i> +8801423997916</p>
+                <p style="color:cornsilk;"><i class="fas fa-print me-3"></i> +8801413435678</p>
+              </div>
+              
+            </div>
+            
+          </div>
+        </section>
+       
+      
+        <!-- Copyright -->
+        <div style="color:cornsilk;" class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2021 Copyright:
+          <a style="border-bottom: 4px solid red;" class="text-reset fw-bold text-decoration-none" href="##">MSN Limited</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    
+   
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
